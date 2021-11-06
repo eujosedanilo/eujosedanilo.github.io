@@ -3,11 +3,17 @@
 
 *{
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    margin: 15px 0px;
 }
 
 body{
 
-    background-color: #96DBE6;
+    background-color: #6ba0ccd2;
 
 }
 img#perfil{
@@ -16,20 +22,104 @@ img#perfil{
     height: 180px;
 }
 
-div{
-    background-color: white;
-    border-radius: 10px;
-    width: 700px;
+nav{
+    background-color: rgb(57, 145, 196);   
     padding: 10px;
     margin: auto;
+
+
+
+}
+nav > a{
+    padding: 10px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+nav a:hover{
+    background-color: rgb(12, 74, 110);
+    color: aliceblue;
+
+
+
+}
+main{
+    background-color: white;  
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    min-width: 300px;
+    max-width: 1700px;
+    padding: 20px;
+    margin: auto; /* posiciona no meio da pagina automaticamente  */
+    
 
 }
 
-header{
-    background-color: white;
-    border-radius: 10px;
-    width: 700px;
-    padding: 10px;
-    margin: auto;
+header{  
+    padding: 20px;
     text-align: center;
+    min-height: 150px;
+    padding-top: 40px;
+    margin: auto;
+    background-image: linear-gradient(to bottom, rgb(122, 187, 224), rgb(57, 145, 196))
 }
+
+header > div {
+    color: white;
+    text-align: center;
+    
+    
+}
+
+a {
+    color: rgb(8, 143, 221);
+    text-decoration: none; /* Retira o sublinhado */
+    font-weight: bold;  /* deixa os links em negrito  */
+}
+
+a:visited {
+    color: rgb(8, 55, 109); /* os links visitados vai ficar azul*/
+}
+
+a:hover {  /* ações que vão ocorrer caso passe o mouse por cima do texto, imagem ou objeto*/
+    color: rgb(46, 43, 226); /* o texto do link vai ficar roxo*/
+    text-decoration: underline; /* aqui vai ficar sublinhado */
+}
+
+a:active { /* vai fazer uma ação ao clicar no link */
+
+    color: black;
+}
+/* active, hover, visited são pseudos classes que define estado de elementos dentro do html. Escrito assim exemplo: ":visited"*/
+
+/* PseudoElementos ele mexem no conteudo periferico do elemento. exemplo: "::after"  */
+
+/* seletores personalizados
+    # = Id
+    . = class
+    : = pseudo-classe
+    :: = pseudo-elemento
+    > = clildren 'filho'
+*/
+
+footer{
+    background-color: rgb(33, 122, 173);
+    color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container > h1 {
+    padding: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.521);
+    text-align: center;   
+}
+
+
+
