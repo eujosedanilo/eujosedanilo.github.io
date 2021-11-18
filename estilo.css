@@ -7,9 +7,24 @@
     padding: 0px;
 }
 
-p {
+main p {
     margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+
 }
+
+main h4 {
+    margin: 15px 0px;   
+}
+
+main h3 {
+    margin: 15px 0px;  
+}
+
+
 
 body{
 
@@ -101,6 +116,23 @@ a:active { /* vai fazer uma ação ao clicar no link */
     :: = pseudo-elemento
     > = clildren 'filho'
 */
+
+main ul {
+    list-style-position: inside;
+    list-style-type: '\2714 \00A0 ';
+}
+
+main ol {
+    list-style-position: inside;
+    columns: 2;
+}
+
+main > ol > li{
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+
 
 footer{
     background-color: rgb(33, 122, 173);
