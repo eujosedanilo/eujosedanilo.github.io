@@ -2,68 +2,76 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>José Danilo</title>
+    <!-- Link para o ficheiro CSS externo -->
     <link rel="stylesheet" href="estilo.css">
+    <!-- Link para a fonte do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <img src="imagem/dan.png" alt="foto inicial" id="perfil"></img>
-            <h1>José Danilo Gomes de Lima</h1>
-        </div>
+
+    <!-- Cabeçalho da página com informações principais -->
+    <header class="cabecalho">
+        <img class="cabecalho__imagem" src="https://github.com/eujosedanilo.png" alt="Foto de José Danilo">
+        <h1 class="cabecalho__titulo">José Danilo</h1>
+        <h2 class="cabecalho__subtitulo">Analista de Sistemas/Negócios</h2>
     </header>
-    <nav>
-        <a href="#" target="_blank">Sobre</a>
-        <a href="#experiencia" target="_self">Experiências Profissionais</a>
-        <a href="#" target="_blank">Projetos</a>
-        <a href="#" target="_blank">Cursos</a>
+
+    <!-- Navegação principal do site -->
+    <nav class="navegacao">
+        <a class="navegacao__link" href="index.html">Início</a>
+        <a class="navegacao__link" href="#sobre">Sobre</a>
+        <a class="navegacao__link" href="#projetos">Projetos</a>
+        <a class="navegacao__link" href="#contato">Contato</a>
     </nav>
-    <main>
 
-        <h3>About</h3>
-        <p>Sou graduado em Sistemas de Informação pelo Centro de Informática da UFPE (CIn-UFPE).Atualmente curso duas pós-graduações uma delas em Análise de Dados e a 
-            outra em Gestão e Qualidade de TIC no IFPE. Trabalho como desenvolvimento em uma empresa de software voltado para área de sáude, produzindo documentos eletrônicos e 
-            relatórios personalizados utilizando SQL, além de prestar suporte a nível de técnico e de negócios aos clientes.</p>
-
-        <h3>Expectativas</h3>
-        <p>Durante a graduação sempre fui levado para área com foco em Negócios, Processos e Qualidade dentro da TI e partindo da necessidade vi a oportunidade de estudar e apronfundar no mundo da programação e desenvolvimento para afins tanto profissional quanto pessoal. A ideia é ir atualizando esse "Currículo" de acordo com o nível de aprendizado adquirido nas ferramentas.</p>
-
-        <section id = "experiencia">
-
-            <h3>Experiências Profissionais</h3>
-            <h4>Desenvolvedor II - MV Sistemas 2020 - Atual</h4>
-            <p>Criação e Migração de Relatório personalizados ultilizando a ferramenta Report e linguagem SQL. Criação de Documentos eletrônicos utilizando o MVeditor e otimizando com querys SQL. Tendo atuado também prestando suporte aos clientes da empresa. </p>
+    <!-- Conteúdo principal da página -->
+    <main class="principal">
+        
+        <!-- Nova Seção Sobre Mim -->
+        <section id="sobre" class="principal__secao sobre">
+            <h3 class="principal__secao__titulo">Sobre Mim</h3>
+            <div class="sobre__conteudo">
+                <p class="sobre__texto">
+                    Olá! Sou o Danilo, um entusiasta da tecnologia e aspirante a desenvolvedor Front-End. Minha jornada no mundo da programação começou com a curiosidade de entender como as páginas que eu visitava todos os dias eram construídas.
+                </p>
+                <p class="sobre__texto">
+                    Atualmente, estou a focar os meus estudos em HTML, CSS e JavaScript, construindo projetos que me desafiam e me permitem aprender cada vez mais. Este portfólio é um reflexo do meu progresso e da minha dedicação.
+                </p>
+            </div>
         </section>
 
-
-        <h4>Auxiliar Administrativo de TI  - Real Hospital Português 2018 - 2020</h4>
-        <p>Atuando na Migração para o Sistema Soul-MV. Criando documentos eletrônicos de prontuário utilizando a ferramenta MVEditor, incluindo criação de querys em SQL para otimização dos documentos. Parametrização dos Sistema PAGU, SGU. Criação de Relatórios Personalizados utilizando o Report. Criação de Paneis. Por fim, prestar suporte ao usuário final do sistema, atendendo suas demandas e tirando duvidas, além de treinamentos. </p>
-        
-
-        <h3>Áreas de Interesses</h3>
-        <ol>
-            <li>Front-End</li>
-            <ul>
-                <li>Html</li>
-                <li>Css</li>
-                <li>JavaScript</li>
+        <section id="projetos" class="principal__secao">
+            <h3 class="principal__secao__titulo">Meus Projetos</h3>
+            <ul class="principal__secao__lista">
+                <li><a class="principal__secao__lista__item" href="https://eujosedanilo.github.io/Decodificador/" target="_blank">Descrever</a></li>
+                <li><a class="principal__secao__lista__item" href="https://eujosedanilo.github.io/7days-of-code-js-1/" target="_blank">Descrever</a></li>
+                <li><a class="principal__secao__lista__item" href="https://eujosedanilo.github.io/7days-of-code-js-2/" target="_blank">Descrever</a></li>
+                <li><a class="principal__secao__lista__item" href="https://eujosedanilo.github.io/7days-of-code-js-3/" target="_blank">Descrever</a></li>
             </ul>
-            <li>Back-End</li>
-            <ul>
-                <li>Java</li>
-                <li>PL/SQL</li>
-                <li>Python</li>
-            </ul>
+        </section>
 
-        </ol>
-        <h3>Minhas Redes Sociais</h3>
-        <p><img src="imagem/icone-github.png" alt="GIT"> <a href="https://github.com/eujosedanilo" target="_blank">GitHub</a><img></p>
-        <p><img src="imagem/icone-linkedin.png" alt="GIT"> <a href="https://www.linkedin.com/in/eujosedanilo/" target="_blank">Linkedln</a><img></p>
-        <p>Para baixar PDF <a href="curriculo.pdf" download class="botao-curriculo">📄 Baixar Currículo</a></p>
+                <!-- Nova Seção Sobre Mim -->
+        <section id="contato" class="principal__secao contato">
+            <h3 class="principal__secao__titulo">Contatos</h3>
+            <div class="contato_conteudo">
+                <p class="contato__texto">
+                    Email: josedanilogomes@gmail.com
+                </p>
+                <p class="contato__texto">
+                    Linkedin: eujosedanilo
+                </p>
+            </div>
+        </section>
     </main>
-    <footer>
-        <p>Site desenvolvido por José Danilo</p>
+
+    <!-- Rodapé da página -->
+    <footer class="rodape">
+        <p>Desenvolvido por José Danilo</p>
     </footer>
 
 </body>
